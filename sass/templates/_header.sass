@@ -10,15 +10,19 @@
     display: flex
     justify-content: space-between
     align-items: center
-.logo 
+.logo a
     color: $primary
     text-transform: uppercase
+    text-decoration: none
 .nav
     &__item
         color: $light
         text-decoration: none
         text-transform: uppercase
         margin-right: 40px
+        transition: color 0.2s
+        &:hover
+            color: $primary
 .phone
     color: $primary
 .contacts
