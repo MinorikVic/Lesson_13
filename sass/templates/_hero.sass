@@ -19,11 +19,17 @@
         position: relative
         max-width: 47.85rem
         margin-left: 4.28rem
+    &__title
+        margin-bottom: 1rem
     &__text
-        font-size: 1.57rem
-        max-width: 500px
+        max-width: 30rem
+        font-size: 1.3rem
+        line-height: 125%
+        margin: 0
+        margin-bottom: 2.8rem
     &__button
-        margin-right: 20px
+        margin-right: 15px
+        padding: 13px 19px
     &__instagram
         left: 0
         top: 0
@@ -31,6 +37,8 @@
         max-width: 80px
         height: 100%
     &__scroll-down
+        font-family: 'Yeseva One'
+        font-size: 0.7rem
         position: absolute
         display: flex
         justify-content: center
@@ -46,8 +54,8 @@
         &::after
             content: ''
             background: url('../img/scroll.svg') no-repeat center
-            width: 30px
-            height: 30px
+            width: 25px
+            height: 25px
             border: 2px solid $primary
             border-radius: 50%
             margin-left: 12px
@@ -57,6 +65,7 @@
     align-items: center
     background: $dark
     &__link
+        font-size: 0.85rem
         display: flex
         align-items: center
         text-transform: uppercase
@@ -66,17 +75,17 @@
         line-height: 0.8
         &::after
             content: ''
-            width: 50px
+            width: 2.8rem
             height: 1px
             background-color: $primary
-            margin-left: 8px
+            margin-left: 0.8rem
 
         
 .title
-    margin: 0
     font-family: 'Yeseva One', cursive
     font-weight: normal
     text-transform: uppercase
-    font-size: 2.857rem
+    font-size: 2.3rem
+    line-height: 1.35
     &--primary
         color: $primary
