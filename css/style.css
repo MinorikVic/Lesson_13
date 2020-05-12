@@ -371,29 +371,34 @@ body {
 img {
   max-width: 100%; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-  font-weight: normal;
-  font-size: 0.95rem; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image:before, .section-title__image:after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background-color: #E3B873;
-      margin: 0 10px; }
-
-.section__subtext {
-  width: 67.90rem;
-  font-family: 'Futura Book', sans-serif;
-  font-style: normal;
-  font-size: 1.3rem;
-  line-height: 1.90rem; }
+.section {
+  padding: 40px 0; }
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 0.95rem; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image:before, .section-title__image:after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background-color: #E3B873;
+        margin: 0 10px; }
+  .section__subtext {
+    width: 51rem;
+    font-family: 'Futura Book', sans-serif;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 0 auto;
+    margin-top: 1.43rem;
+    margin-bottom: 3.5rem;
+    text-transform: none; }
 
 .header {
   position: fixed;
@@ -617,7 +622,7 @@ img {
   color: #959595;
   margin-bottom: 2.5rem; }
 
-.card__pricetag {
+.card__pricecard {
   position: absolute;
   left: 0;
   bottom: -1.79rem;
@@ -627,7 +632,7 @@ img {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #ffffff;
-  padding: 1.214rem 2.6rem; }
+  padding: 1.214rem 4.3rem; }
 
 @media screen and (max-width: 1300px) {
   html {
