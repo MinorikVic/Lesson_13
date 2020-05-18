@@ -326,7 +326,6 @@ template {
   display: none; }
 
 .button {
-  padding: 10px 19px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -337,6 +336,7 @@ template {
     width: 14.78rem;
     height: 3.57rem; }
   .button--primary {
+    padding: 10px 19px;
     font-size: 1rem;
     background-color: #E3B873;
     color: #ffffff;
@@ -345,6 +345,7 @@ template {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
+    padding: 10px 19px;
     width: 14.78rem;
     height: 3.57rem;
     font-size: 1rem;
@@ -854,11 +855,10 @@ img {
     font-size: 1.29rem;
     margin-bottom: 2.28rem; }
   .hero__button {
-    display: block;
     min-width: 27.86rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 376px) {
   .hero__scroll-down {
     display: none; }
   .hero__content {
@@ -868,14 +868,15 @@ img {
     margin-left: -0.79rem; }
   .hero__text {
     font-size: 1.5rem;
-    margin-bottom: 2.28rem;
+    margin-bottom: 2.2rem;
     line-height: 137%; }
-  .hero__button {
-    min-width: 27.86rem;
-    margin-top: 1rem;
-    margin-bottom: 1.85rem; }
   .hero__title {
-    font-size: 1.9rem; }
+    font-size: 1.9rem;
+    margin-top: 3.5rem; }
+  .button {
+    font-size: 1.13rem;
+    min-width: 28.2rem;
+    margin-top: 1rem; }
   .section__subtext {
     width: 25rem;
     font-size: 1.25rem;
