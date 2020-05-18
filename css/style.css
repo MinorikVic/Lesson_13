@@ -640,14 +640,15 @@ img {
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   font-size: 1.29rem;
-  margin-top: 0;
-  margin-bottom: 0.7rem; }
+  margin-top: 0.2rem;
+  margin-bottom: 0.55rem;
+  margin-left: -0.5rem; }
 
 .card__list {
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   margin: 0;
   font-size: 1.07rem;
-  line-height: 1.9rem;
+  line-height: 1.85rem;
   color: #959595;
   margin-bottom: 2.5rem; }
 
@@ -667,30 +668,6 @@ img {
   margin-bottom: 2rem;
   font-size: 0.95rem;
   font-weight: normal; }
-
-.card__text {
-  position: relative;
-  max-width: 23.6rem;
-  margin: 0 auto;
-  margin-top: -9.3rem;
-  padding: 1.79rem 2.14rem;
-  background-color: #ffffff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
-
-.card__title {
-  font-family: 'Yeseva One', cursive;
-  font-weight: normal;
-  font-size: 1.29rem;
-  margin-top: 0;
-  margin-bottom: 0.7rem; }
-
-.card__list {
-  padding: 0 0 0 0.5rem;
-  margin: 0;
-  font-size: 1.07rem;
-  line-height: 1.8rem;
-  color: #959595;
-  margin-bottom: 2.5rem; }
 
 .card__pricecard {
   position: absolute;
@@ -860,7 +837,8 @@ img {
 
 @media screen and (max-width: 376px) {
   .hero {
-    background: #131313 url("../img/bg_hero_mini.jpg") no-repeat center/cover; }
+    background: #131313 url("../img/bg_hero_mini.jpg") no-repeat center/cover;
+    height: 72vh; }
     .hero__scroll-down {
       display: none; }
     .hero__content {
@@ -871,10 +849,10 @@ img {
     .hero__text {
       font-size: 1.5rem;
       margin-bottom: 2.2rem;
-      line-height: 137%; }
+      line-height: 135%; }
     .hero__title {
       font-size: 1.9rem;
-      margin-top: -22.6rem; }
+      margin-top: 7.8rem; }
   .button {
     font-size: 1.13rem;
     min-width: 28.2rem;
