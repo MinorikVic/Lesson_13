@@ -915,7 +915,7 @@ img {
     .section-title__design {
       color: #ffffff; } }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
   .hero {
     background: #131313 url("../img/bg_hero_mini.jpg") no-repeat center/cover;
     height: 72vh; }
