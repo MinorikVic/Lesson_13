@@ -981,7 +981,8 @@ img {
     background-color: #252525; }
   .design__card {
     margin-top: -1rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    width: 29rem; }
   .card__text-card {
     max-width: 22.6rem;
     margin-top: -12.3rem;
