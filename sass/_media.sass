@@ -4,6 +4,17 @@
     .nav
         &__item
             margin-right: 1rem
+    .types
+        &__card
+            width: 25rem
+    .design
+        &__card
+            width: 25rem
+    .card
+        &__image
+            margin-left: 0
+        &__title, &__title-card
+            font-size: 1.24rem
     
 @media screen and ( max-width: 1200px )
     html
@@ -11,14 +22,39 @@
     .nav
         &__item
             margin-right: 1rem
+    .types
+        &__card
+            width: 25rem
+    .design
+        &__card
+            width: 25rem
+    .card
+        &__image
+            margin-left: 0
+        &__title, &__title-card
+            font-size: 1.24rem
 @media screen and ( max-width: 992px )
     .nav
         display: none
+    .row
+        display: flex
+        justify-content: space-between
     .hero
         &__instagram
             display: none
         &__content
             margin-left: 0
+    .types
+        &__card
+            width: 20rem
+    .design
+        &__card
+            width: 20rem
+    .card
+        &__image
+            margin-left: 0
+        &__title, &__title-card
+            font-size: 1.24rem
 @media screen and ( max-width: 760px )
     .row
         flex-direction: column
@@ -26,9 +62,16 @@
     .types
         &__card
             margin-bottom: 5rem
-    .card
-        &__text
-            margin-left: 0
+            width: 33rem
+    .design
+        &__card
+            margin-bottom: 5rem
+            width: 33rem
+    .section
+        &__subtext
+            width: 33rem
+            font-size: 1.5rem
+            line-height: 1.75rem
 @media screen and ( max-width: 576px )
     .contacts
         &__phone
@@ -40,6 +83,8 @@
     .title
         font-size: 1.64rem
     .hero
+        background: $dark url('../img/bg_hero_mini.jpg') no-repeat center/cover
+        height: 72vh
         &__scroll-down
             display: none
         &__content
@@ -50,6 +95,28 @@
         &__button
             min-width: 27.86rem
             margin-bottom: 1.85rem
+    .container
+        &__design
+            background-color: $dark-design
+    .design
+        &__card
+            margin-top: -1rem
+            margin-bottom: 5rem
+    .card
+        &__text-card
+            max-width: 22.6rem
+            margin-top: -12.3rem
+            margin-left: 1rem
+    .section
+        &__subtext
+            width: 25rem
+            font-size: 1.25rem
+            line-height: 1.75rem
+            color: $light
+        &-title
+            font-size: 1.23rem
+            &__design
+                color: $light
 @media screen and ( max-width: 376px )
     .hero
         background: $dark url('../img/bg_hero_mini.jpg') no-repeat center/cover
@@ -96,6 +163,8 @@
             margin-bottom: 4rem
             width: 29rem
     .card
+        &__image
+            margin-left: 0
         &__text
             max-width: 22.6rem
             margin-top: -12.3rem

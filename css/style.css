@@ -627,6 +627,9 @@ img {
   font-size: 0.95rem;
   font-weight: normal; }
 
+.card__image {
+  margin-left: 1rem; }
+
 .card__text {
   position: relative;
   max-width: 23.6rem;
@@ -817,30 +820,63 @@ img {
   html {
     font-size: 13px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .types__card {
+    width: 25rem; }
+  .design__card {
+    width: 25rem; }
+  .card__image {
+    margin-left: 0; }
+  .card__title, .card__title-card {
+    font-size: 1.24rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .types__card {
+    width: 25rem; }
+  .design__card {
+    width: 25rem; }
+  .card__image {
+    margin-left: 0; }
+  .card__title, .card__title-card {
+    font-size: 1.24rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
+  .row {
+    display: flex;
+    justify-content: space-between; }
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .types__card {
+    width: 20rem; }
+  .design__card {
+    width: 20rem; }
+  .card__image {
+    margin-left: 0; }
+  .card__title, .card__title-card {
+    font-size: 1.24rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
     flex-direction: column;
     align-items: center; }
   .types__card {
-    margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0; } }
+    margin-bottom: 5rem;
+    width: 33rem; }
+  .design__card {
+    margin-bottom: 5rem;
+    width: 33rem; }
+  .section__subtext {
+    width: 33rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem; } }
 
 @media screen and (max-width: 576px) {
   .contacts__phone {
@@ -851,16 +887,37 @@ img {
     display: none; }
   .title {
     font-size: 1.64rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    min-width: 27.86rem;
-    margin-bottom: 1.85rem; } }
+  .hero {
+    background: #131313 url("../img/bg_hero_mini.jpg") no-repeat center/cover;
+    height: 72vh; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      max-width: 22.86rem; }
+    .hero__text {
+      font-size: 1.29rem;
+      margin-bottom: 2.28rem; }
+    .hero__button {
+      min-width: 27.86rem;
+      margin-bottom: 1.85rem; }
+  .container__design {
+    background-color: #252525; }
+  .design__card {
+    margin-top: -1rem;
+    margin-bottom: 5rem; }
+  .card__text-card {
+    max-width: 22.6rem;
+    margin-top: -12.3rem;
+    margin-left: 1rem; }
+  .section__subtext {
+    width: 25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #ffffff; }
+  .section-title {
+    font-size: 1.23rem; }
+    .section-title__design {
+      color: #ffffff; } }
 
 @media screen and (max-width: 376px) {
   .hero {
@@ -904,6 +961,8 @@ img {
     margin-top: 1rem;
     margin-bottom: 4rem;
     width: 29rem; }
+  .card__image {
+    margin-left: 0; }
   .card__text {
     max-width: 22.6rem;
     margin-top: -12.3rem; }
