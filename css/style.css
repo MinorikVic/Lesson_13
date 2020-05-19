@@ -835,10 +835,6 @@ img {
     font-size: 12px; }
   .nav__item {
     margin-right: 1rem; }
-  .types__card {
-    width: 25rem; }
-  .design__card {
-    width: 25rem; }
   .card__image {
     margin-left: 0; }
   .card__title, .card__title-card {
@@ -965,7 +961,8 @@ img {
     margin-left: 0; }
   .card__text {
     max-width: 22.6rem;
-    margin-top: -12.3rem; }
+    margin-top: -12.3rem;
+    margin-left: 0; }
   .card__title {
     font-size: 1.25rem;
     margin-top: -0.2rem;
@@ -984,8 +981,7 @@ img {
     background-color: #252525; }
   .design__card {
     margin-top: -1rem;
-    margin-bottom: 5rem;
-    width: 28rem; }
+    margin-bottom: 5rem; }
   .card__text-card {
     max-width: 22.6rem;
     margin-top: -12.3rem;
