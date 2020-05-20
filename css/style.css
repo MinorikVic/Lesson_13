@@ -772,8 +772,6 @@ img {
     padding-bottom: 2rem; }
     .swiper-slide__text-bottom {
       margin-bottom: 5.4rem; }
-    .swiper-slide__text-left {
-      margin-left: -124px; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -816,6 +814,22 @@ img {
   margin-right: 9px;
   margin-left: 9px; }
 
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 13px; }
+  .nav__item {
+    margin-right: 1rem; }
+  .types__card {
+    width: 25rem; }
+  .design__card {
+    width: 25rem; }
+  .card__image {
+    margin-left: 0; }
+  .card__title, .card__title-card {
+    font-size: 1.24rem; }
+  .col-50 {
+    width: 50%; } }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 13px; }
@@ -828,19 +842,44 @@ img {
   .card__image {
     margin-left: 0; }
   .card__title, .card__title-card {
-    font-size: 1.24rem; } }
+    font-size: 1.24rem; }
+  .swiper-slide__text {
+    margin-top: -0.35rem; }
+  .swiper-slide__text-left {
+    margin-top: -0.5rem;
+    margin-left: -1.2rem; }
+  .swiper-slide__text-bottom {
+    margin-top: 0.4rem; }
+  .swiper-button-prev {
+    margin-bottom: 2.5rem; }
+  .swiper-pagination {
+    margin-bottom: 2.5rem;
+    margin-left: -1rem; }
+  .swiper-button-next {
+    margin-bottom: 2.5rem;
+    margin-left: -2rem; }
+  .col-50 {
+    width: 50%; } }
 
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .nav__item {
     margin-right: 1rem; }
+  .types__card {
+    margin-right: 1rem; }
+  .design__card {
+    margin-right: 1rem; }
   .card__image {
     margin-left: 0; }
   .card__title, .card__title-card {
-    font-size: 1.24rem; } }
+    font-size: 1.24rem; }
+  .col-50 {
+    width: 50%; } }
 
 @media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
   .row {
     display: flex;
     justify-content: space-between; }
@@ -849,13 +888,17 @@ img {
   .hero__content {
     margin-left: 0; }
   .types__card {
-    width: 20rem; }
+    width: 20rem;
+    margin-right: 1rem; }
   .design__card {
-    width: 20rem; }
+    width: 20rem;
+    margin-right: 1rem; }
   .card__image {
     margin-left: 0; }
   .card__title, .card__title-card {
-    font-size: 1.24rem; } }
+    font-size: 1.24rem; }
+  .col-50 {
+    width: 50%; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -866,11 +909,7 @@ img {
     width: 33rem; }
   .design__card {
     margin-bottom: 5rem;
-    width: 33rem; }
-  .section__subtext {
-    width: 33rem;
-    font-size: 1.5rem;
-    line-height: 1.75rem; } }
+    width: 33rem; } }
 
 @media screen and (max-width: 650px) {
   .nav {
