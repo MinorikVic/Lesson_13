@@ -11,10 +11,14 @@
     justify-content: space-between
     align-items: center
 .logo a
+    color: $primary
     font-size: 1.067rem
     color: $primary
     text-transform: uppercase
     text-decoration: none
+    transition: 0.2s
+    &:hover
+        color: $light
 .nav
     margin-left: 20px
     &__item
@@ -22,8 +26,9 @@
         color: $light
         text-decoration: none
         text-transform: uppercase
-        margin-right: 2.65rem
-        transition: color 0.2s
+        font-weight: normal
+        margin-right: 2.5rem
+        transition: 0.2s
         &:hover
             color: $primary
     &--primary
