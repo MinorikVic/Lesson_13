@@ -947,6 +947,27 @@ img {
   .footer__menu {
     background: #131313;
     padding: 4.285rem 0; }
+  .footer__address-title {
+    text-align: center;
+    max-width: 32rem;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #E3B873; }
+  .footer__address-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .footer__map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem; }
 
 @media screen and (max-width: 1400px) {
   html {
