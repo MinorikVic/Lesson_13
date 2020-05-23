@@ -399,7 +399,9 @@ template {
     justify-content: center; }
 
 label.invalid {
-  color: tomato; }
+  position: absolute;
+  color: tomato;
+  margin-top: 4rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
