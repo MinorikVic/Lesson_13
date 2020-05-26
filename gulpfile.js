@@ -29,6 +29,7 @@ function serveSass() {
     return src("./sass/**/*.sass", "./sass/**/*.scss")
         .pipe(sass())
         .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(dest("./css"))

@@ -9,14 +9,18 @@
         width: 14.78rem
         height: 3.57rem
     &--primary 
-        padding: 10px 19px
+        padding: 9px 18px
         font-size: 1rem
         background-color: $primary
+        border: 1px solid transparent
         color: $light
         box-shadow: 0px 5px 15px rgba($primary, 0.2)
         transition: box-shadow 0.2s
         &:hover
             box-shadow: none
+            background-color: transparent
+            border: 1px solid $light
+            color: $primary
     &--outline
         padding: 10px 19px
         width: 14.78rem
@@ -26,6 +30,9 @@
         background-color: transparent 
         color: $light
         margin: 0
+        &:hover
+            background-color: $primary
+            border: none
 .label
     font-size: 1.07rem
     &--light

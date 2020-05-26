@@ -1,39 +1,39 @@
 $(document).ready(function () {
-    var modal =$('.modal'),
-        modalBtn =$('[data-toggle=modal]'),
-        closeBtn =$('.modal__close');
-    
-    modalBtn.on('click',function(){
+    const modal = $('.modal'),
+        modalBtn = $('[data-toggle=modal]'),
+        closeBtn = $('.modal__close');
+
+    modalBtn.on('click', function () {
         modal.toggleClass('modal--visible');
     });
-    closeBtn.on('click',function(){
+    closeBtn.on('click', function () {
         modal.toggleClass('modal--visible');
     });
 
-    var mySwiper = new Swiper('.swiper-container', {
+    const mySwiper = new Swiper('.swiper-container', {
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-          },
+        },
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
-          },
-      })
+        },
+    });
 
-    var next = $('.swiper-button-next');
-    var prev = $('.swiper-button-prev');
-    var bullets = $('.swiper-pagination');
+    const next = $('.swiper-button-next');
+    const prev = $('.swiper-button-prev');
+    const bullets = $('.swiper-pagination');
 
     next.css('left', prev.width() + 25 + bullets.width() + 25)
-    bullets.css('left', prev.width() + 25)
+    bullets.css('left', prev.width() + 25);
 
     new WOW().init();
 
     //Валидация формы
     const allForms = ['.modal__form', '.control__form', '.footer__form'];
-    $.each(allForms, function (index, value){
+    $.each(allForms, function (index, value) {
         $(value).validate({
             errorClass: "invalid",
             rules: {
@@ -44,41 +44,58 @@ $(document).ready(function () {
                 },
                 userPhone: "required",
                 userEmail: {
-                  required: true,
-                  email: true
-                }
-              },
+                    required: true,
+                    email: true
+                },
+                userQuestion: {
+                    required: true,
+                    minlength: 15,
+                },
+                userCheckbox: "required",
+            },
             messages: {
                 userName: {
-                    required: "Заполните поле",
-                    minlength: "Не менее 2 букв",
-                    maxlength: "Не более 15 букв"
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче 2 букв",
+                    maxlength: "Поле не может содеражть больше 15 символов"
                 },
-                userPhone: "Телефон обязателен",
                 userEmail: {
-                  required: "Обязательно укажите email",
-                  email: "Введите корректный email"
+                    required: "Обязательно укажите email",
+                    email: "Введите в формате: name@domain.com/ru"
                 },
-                submitHandler: function(form) {
-                    $.ajax({
-                        type: "POST",
-                        url: "send.php",
-                        data: $(form).serialize(),
-                        success: function (response) {
-                            alert('Форма отправлена, мы свяжемя c вами через 10 минут');
-                            $(form)[0].reset();
-                            modal.removeClass('modal--visible');
-                        },
-                        erorr: function (response) {
-                            console.erorr('Ошибка запроса ' + response);
-                        }
-                    });
-                  }
-              }
-    })
+                userQuestion: {
+                    required: "Поле вопрос обязательно",
+                    minlength: "Не менее 15 символов",
+                },
+                userPhone: {
+                    required: "Телефон обязателен"
+                },
+                userCheckbox: {
+                    required: "Подтвердите согласие на обработку персональных данных"
+                }
+            },
+            submitHandler: function (form) {
+                $.ajax({
+                    type: "POST",
+                    url: "send.php",
+                    data: $(form).serialize(),
+                    success: function (response) {
+                        $(form)[0].reset();
+                        modal.removeClass('modal--visible');
+                        const modalThanks = $('.window-thanks');
+                            modalThanks.addClass('window-thanks--visible');
+                        setTimeout(function(){
+                            modalThanks.removeClass('window-thanks--visible');
+                        }, 5000);
+                    }
+                });
+            }
+        });
     });
+});
 
-    //маска для телефона
+//маска для телефона
 
-    $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7 (___) ___-__-__"});
+$('[type=tel]').mask('+7(000)000-00-00', {
+placeholder: "Ваш номер телефона: "
 });

@@ -16,7 +16,9 @@
         &__title, &__title-card
             font-size: 1.24rem
     .col
-        &-50
+        &-45
+            width: 50% 
+        &-55
             width: 50%
 @media screen and ( max-width: 1300px )
     html
@@ -53,7 +55,9 @@
             margin-bottom: 2.5rem
             margin-left: -2rem
     .col
-        &-50
+        &-45
+            width: 50% 
+        &-55
             width: 50%
 @media screen and ( max-width: 1200px )
     html
@@ -72,8 +76,16 @@
             margin-left: 0
         &__title, &__title-card
             font-size: 1.24rem
+        &__width
+            width: 23rem
+        &__text
+            margin-top: -5.3rem
+            &-card
+                margin-top: -5.3rem
     .col
-        &-50
+        &-45
+            width: 50% 
+        &-55
             width: 50%
 @media screen and ( max-width: 992px )
     .nav
@@ -100,8 +112,30 @@
         &__title, &__title-card
             font-size: 1.24rem
     .col
-        &-50
+        &-45
+            width: 50% 
+        &-55
             width: 50%
+    .swiper
+        &__image
+            margin-top: 5.5rem
+@media screen and ( max-width: 890px )
+    .row
+        flex-direction: column
+        align-items: center
+    .col
+        &-45
+            width: 100% 
+        &-55
+            width: 100%
+    .types
+        &__card
+            margin-bottom: 6rem
+            width: 33rem
+    .design
+        &__card
+            margin-bottom: 6rem
+            width: 33rem
 @media screen and ( max-width: 760px )
     .row
         flex-direction: column
@@ -114,6 +148,14 @@
         &__card
             margin-bottom: 5rem
             width: 33rem
+    .col
+        &-45
+            width: 100% 
+        &-55
+            width: 100%
+    .swiper
+        &__image
+            margin-top: 5.5rem
 @media screen and ( max-width: 650px )
     .nav
         display: none
@@ -144,8 +186,7 @@
             background-color: $dark-design
     .design
         &__card
-            margin-top: -1rem
-            margin-bottom: 5rem
+            margin-bottom: 8rem
     .card
         &__text-card
             max-width: 22.6rem
@@ -170,7 +211,7 @@
                     line-height: 151%
                     font-size: 1.7rem
                     margin-left: -2px
-                    margin-top: -2.5rem
+                    margin-top: 0.5rem
     .swiper
         &-slide
             &__text
@@ -191,7 +232,35 @@
     .col
         &-50
             width: 100%
+    .control
+        background-color: $dark-design
+        &__text
+            color: $light
+        &__label
+            color: rgba($light, 0.5)
+        &__policy-label
+            color: $light
 @media screen and ( max-width: 576px )
+    .control
+        background-color: $dark-design
+        &__text
+            color: $light
+        &__form
+            flex-direction: column
+            align-items: center
+            width: 100%
+        &__input
+            width: 100%
+            &-group
+                width: 80%
+                margin-bottom: 3rem
+        &__label
+            color: rgba($light, 0.5)
+        &__policy-label
+            margin-top: -10rem
+            color: $light
+        &__button
+            margin-top: 3rem
     .nav
         display: none
     .contacts
@@ -219,10 +288,15 @@
     .container
         &__design
             background-color: $dark-design
+    .types
+        &__card
+            margin-right: 0
+            width: 29rem
     .design
         &__card
-            margin-top: -1rem
-            margin-bottom: 5rem
+            width: 29rem
+            margin-bottom: 8rem
+            margin-right: 0
     .card
         &__text-card
             max-width: 22.6rem
@@ -247,7 +321,7 @@
                     line-height: 151%
                     font-size: 1.7rem
                     margin-left: -2px
-                    margin-top: -2.5rem
+                    margin-top: 0.5rem
     .swiper
         &-slide
             &__text
@@ -408,3 +482,9 @@
     .col
         &-50
             width: 100%
+    .footer
+        &__button
+            min-width: 20rem
+    .control
+        &__button
+            min-width: 20rem
